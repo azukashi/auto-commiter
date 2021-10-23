@@ -51,7 +51,7 @@ Difference of commits between timestamps. Less the value of days, more dense the
 makeCommit(500);
 ```
 
-At the end line of `index.js`, You'll see this. This is how many you want to make GitHub Commits. By Default, It's set to `500`. You can change the value to `1000`, higher, or more less.
+At the end line of `index.js`, You'll see this. This is how many you want to make GitHub Commits. By Default, It's set to `700`. You can change the value to `1000`, higher, or more less.
 
 ## License
 
