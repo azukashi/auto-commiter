@@ -1,45 +1,39 @@
 # GitHub Auto Commiter
 
-Does your GitHub Graph looks like a noob with a few number of Commits and Push? Do you want to have your contribution graph with lots of commit like pro. This project is to your rescue.
+Does your GitHub Graph looks like a noob with a few number of Commits and Push? Do you want to have your contribution graph with lots of commit like pro. This project can helps you!
 
 ## Introduction
 
-The project uses [Moment](https://www.npmjs.com/package/moment), a JavaScript date library for parsing, validating, manipulating, and formatting dates. It allows you to make a commit on past date done by subtracting the years from given date and make commits over a period of regular days. Also you can do alot with this code.
-
-## Requirements
-
-- Node.js v12 or later
-- Git
+The project generates random commit at random past days, months, years. uses [Moment](https://www.npmjs.com/package/moment), a JavaScript date library for parsing, validating, manipulating, and formatting dates. It allows you to make a commit on past date done by subtracting the years from given date and make commits over a period of regular days. Also you can do alot with this code.
 
 ## Installation
 
-Clone and fork the repository to make the changes in your local system.
+### Clone or fork the repository
 
 ```sh
 $ git clone https://github.com/gifaldyazkaa/auto-commiter.git
 $ cd auto-commiter
 ```
 
-Install All Required Dependecies.
+### Install All Required Dependecies.
 
 ```sh
 $ yarn install
 ```
 
-Run the project to see the magic of moment package.
+### Run the project to see the magic of moment package.
 
 ```sh
 $ yarn start
 ```
 
-Bang !
-You can see the commit date in terminal.
+Boom! You can see the commit date in terminal.
 
 ## Commits
 
-By Default, While you running `node .`, It will generates `500` GitHub Commits in `0` Past Year.
+By Default, While you running `yarn start`, It will generates `700` GitHub Commits in `1.1` Past Year.
 
-You can change how many value, or year, days as you wants.
+### You can change how many value, or year, days as you wants.
 
 ```js
 subtract(year, "y");
