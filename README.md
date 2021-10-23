@@ -19,8 +19,8 @@ Clone and fork the repository to make the changes in your local system.
 $ git clone https://github.com/gifaldyazkaa/auto-commiter.git
 $ cd auto-commiter
 ```
-Install All Required Dependecies.
 
+Install All Required Dependecies.
 
 ```sh
 $ yarn install
@@ -58,10 +58,6 @@ makeCommit(500);
 ```
 
 At the end line of `index.js`, You'll see this. This is how many you want to make GitHub Commits. By Default, It's set to `500`. You can change the value to `1000`, higher, or more less.
-
-## Running `node .` Everyday?
-
-Cmon bro, You don't need this. You just need to run once, and Everyday, Idk how, But GitHub will Run and Generates GitHub Commits. You don't need to touch and running `node .` everyday.
 
 ## License
 
