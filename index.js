@@ -9,24 +9,30 @@ const makeCommit = (n) => {
   const x = random.int(0, 54);
   const y = random.int(0, 6);
   const DATE = moment()
-    .subtract(0, "y")
+    .subtract(1.1, "y")
     .add(0, "d")
     .add(x, "w")
     .add(y, "d")
     .format();
 
+  const formattedDate = moment(DATE).format("lll");
+
   const data = {
-    date: DATE,
+    date: formattedDate,
   };
 
-  console.log(DATE);
+  console.log(`Creating commit at : ${formattedDate}...`);
 
   jsonfile.writeFile(FILE_PATH, data, () => {
     simpleGit()
       .add([FILE_PATH])
-      .commit(`chore: ${DATE}`, { "--date": DATE }, makeCommit.bind(this, --n))
+      .commit(
+        `chore: create commit at ${formattedDate}`,
+        { "--date": DATE },
+        makeCommit.bind(this, --n)
+      )
       .push();
   });
 };
 
-makeCommit(500);
+makeCommit(700);
