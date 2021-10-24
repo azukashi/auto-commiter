@@ -29,6 +29,14 @@ $ yarn start
 
 Boom! You can see the commit date in terminal.
 
+## Scripts
+
+Available scripts at [package.json](package.json)
+
+| Name  | Script       | Description    |
+| ----- | ------------ | -------------- |
+| Start | `yarn start` | Run the script |
+
 ## Commits
 
 By Default, While you running `yarn start`, It will generates `700` GitHub Commits in `1.1` Past Year.
@@ -48,7 +56,7 @@ add(days, "d");
 Difference of commits between timestamps. Less the value of days, more dense the contributon graph will be. Example - add(4,'d')
 
 ```js
-makeCommit(500);
+makeCommit(700);
 ```
 
 At the end line of `index.js`, You'll see this. This is how many you want to make GitHub Commits. By Default, It's set to `700`. You can change the value to `1000`, higher, or more less.
