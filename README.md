@@ -36,6 +36,7 @@ Available scripts at [package.json](package.json)
 | Name  | Script       | Description    |
 | ----- | ------------ | -------------- |
 | Start | `yarn start` | Run the script |
+| Lint  | `yarn lint`  | Lint checking  |
 
 ## Commits
 
