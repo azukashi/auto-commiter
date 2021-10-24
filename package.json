@@ -4,7 +4,8 @@
   "description": "Makes your GitHub Graph green like a pro!",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint ."
   },
   "repository": "https://github.com/gifaldyazkaa/auto-commiter",
   "author": "Gifaldy Azka",
@@ -15,6 +16,8 @@
     "random": "^3.0.6",
     "simple-git": "^2.38.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.1.0"
+  },
   "private": true
 }
