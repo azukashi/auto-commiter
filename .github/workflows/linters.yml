@@ -1,12 +1,10 @@
-name: Job Runner
+name: "[ESLint] Lint checking"
 
 on:
   push:
     branches: [master]
   pull_request:
     branches: [master]
-  schedule:
-    - cron: "00 00 * * *"
 
 jobs:
   check:
@@ -25,13 +23,11 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: ${{ runner.os }}-node-
 
-      - name: Install
+      - name: Install dependecies
         run: yarn install
 
-      - name: Commit
-        run: yarn start
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Lint
+        run: yarn lint
