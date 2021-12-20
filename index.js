@@ -6,11 +6,11 @@ const FILE_PATH = "./data.json";
 
 const makeCommit = (n) => {
   if (n === 0) return simpleGit().push();
-  console.log(`\nCommit ${n}`);
+  console.log(`\n├─ Commit ${n}\n│`);
   const x = random.int(0, 54);
   const y = random.int(0, 6);
   const DATE = moment()
-    .subtract(1.1, "y")
+    .subtract(1.3, "y")
     .add(0, "d")
     .add(x, "w")
     .add(y, "d")
@@ -22,7 +22,7 @@ const makeCommit = (n) => {
     date: formattedDate,
   };
 
-  console.log(`Creating commit at : ${formattedDate}...`);
+  console.log(`└─ Creating commit at : ${formattedDate}...`);
 
   jsonfile.writeFile(FILE_PATH, data, () => {
     simpleGit()
