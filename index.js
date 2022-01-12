@@ -16,7 +16,7 @@ const makeCommit = (n) => {
     .add(y, "d")
     .format();
 
-  const formattedDate = moment(DATE).format("lll");
+  const formattedDate = moment(DATE).format("L");
 
   const data = {
     date: formattedDate,
@@ -28,7 +28,7 @@ const makeCommit = (n) => {
     simpleGit()
       .add([FILE_PATH])
       .commit(
-        `chore: create commit at ${formattedDate}`,
+        `feat: create commit at ${formattedDate}`,
         { "--date": DATE },
         makeCommit.bind(this, --n)
       )
