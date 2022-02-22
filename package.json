@@ -12,13 +12,14 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "@types/node": "^17.0.19",
     "jsonfile": "^6.1.0",
     "moment": "^2.29.1",
     "random": "^3.0.6",
     "simple-git": "^2.38.0"
   },
   "devDependencies": {
+    "@types/jsonfile": "^6.1.0",
+    "@types/node": "^17.0.19",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "eslint": "^8.1.0",
