@@ -4,7 +4,7 @@ import random from "random";
 import moment from "moment";
 const FILE_PATH: string = "../data/data.json";
 
-const makeCommit = (n) => {
+const makeCommit = (n: any) => {
   if (n === 0) return simpleGit().push();
   console.log(`\n├─ Commit ${n}\n│`);
   const x: number = random.int(0, 54);
