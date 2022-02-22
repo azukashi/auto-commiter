@@ -40,12 +40,13 @@ Boom! You can see the commit date in terminal.
 
 ## Scripts
 
-Available scripts at [package.json](package.json)
+Available scripts at [package.json](./package.json)
 
-| Name  | Script       | Description    |
-| ----- | ------------ | -------------- |
-| Start | `yarn start` | Run the script |
-| Lint  | `yarn lint`  | Lint checking  |
+| Name  | Script       | Description                                |
+| ----- | ------------ | ------------------------------------------ |
+| Start | `yarn start` | Compile & Run the script                   |
+| Build | `yarn build` | Compile & Build the script into JavaScript |
+| Lint  | `yarn lint`  | Lint checking                              |
 
 ## Commits
 
