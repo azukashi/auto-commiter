@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "start": "tsc && node dist/main.js",
+    "build": "tsc",
     "lint": "eslint ."
   },
   "repository": "https://github.com/gifaldyazkaa/auto-commiter",
