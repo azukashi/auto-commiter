@@ -11,20 +11,29 @@ The project generates random commit at random past days, months, years. uses [Mo
 ### Clone or fork the repository
 
 ```sh
+# Clone method
 $ git clone https://github.com/gifaldyazkaa/auto-commiter.git
+$ cd auto-commiter
+
+# If you forked this repo
+$ git clone https://github.com/your-username/auto-commiter.git
 $ cd auto-commiter
 ```
 
-### Install All Required Dependecies.
+### Install Required Dependencies
 
 ```sh
+# Yarn
 $ yarn install
 ```
 
-### Run the project to see the magic of moment package.
+### Run the project to see the magic of moment package
 
 ```sh
+# Yarn
 $ yarn start
+# dum
+$ dum start
 ```
 
 Boom! You can see the commit date in terminal.
@@ -48,13 +57,13 @@ By Default, While you running `yarn start`, It will generates `700` GitHub Commi
 subtract(year, "y");
 ```
 
-Year here represents the year to start the commits. Greater the value of year, more dense the graph along main axis. Example - subtract(2,'y')
+Year here represents the year to start the commits. Greater the value of year, more dense the graph along main axis. Example: `subtract(2,'y')`
 
 ```js
 add(days, "d");
 ```
 
-Difference of commits between timestamps. Less the value of days, more dense the contributon graph will be. Example - add(4,'d')
+Difference of commits between timestamps. Less the value of days, more dense the contributon graph will be. Example: `add(4,'d')`
 
 ```js
 makeCommit(700);
@@ -64,4 +73,4 @@ At the end line of `index.js`, You'll see this. This is how many you want to mak
 
 ## License
 
-This Project is Under [MIT License](https://github.com/gifaldyazkaa/auto-commiter/blob/master/LICENSE) &copy; Gifaldy Azka
+This Project is Licensed Under [MIT License](./LICENSE)
