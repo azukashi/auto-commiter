@@ -10,7 +10,7 @@
   },
   "repository": "https://github.com/gifaldyazkaa/auto-commiter",
   "author": "",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "dependencies": {
     "jsonfile": "^6.1.0",
     "moment": "^2.29.1",
