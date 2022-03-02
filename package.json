@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "node ./src/main.js",
+    "start": "node ./main.js",
     "lint": "eslint ."
   },
   "repository": "https://github.com/gifaldyazkaa/auto-commiter",
