@@ -5,25 +5,19 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "tsc && node dist/main.js",
-    "build": "tsc",
+    "start": "node ./src/main.js",
     "lint": "eslint ."
   },
   "repository": "https://github.com/gifaldyazkaa/auto-commiter",
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "jsonfile": "^6.1.0",
-    "moment": "^2.29.1",
-    "random": "^3.0.6",
-    "simple-git": "^2.38.0"
+    "jsonfile": "6.1.0",
+    "moment": "2.29.1",
+    "random": "3.0.6",
+    "simple-git": "2.38.0"
   },
   "devDependencies": {
-    "@types/jsonfile": "^6.1.0",
-    "@types/node": "^17.0.19",
-    "@typescript-eslint/eslint-plugin": "^5.12.1",
-    "@typescript-eslint/parser": "^5.12.1",
-    "eslint": "^8.1.0",
-    "typescript": "^4.5.5"
+    "eslint": "8.1.0"
   }
 }
