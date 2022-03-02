@@ -1,22 +1,22 @@
-import simpleGit from "simple-git";
-import jsonfile from "jsonfile";
-import random from "random";
-import moment from "moment";
-const FILE_PATH: string = "../data/data.json";
+const simpleGit = require("simple-git");
+const jsonfile = require("jsonfile");
+const random = require("random");
+const moment = require("moment");
+const FILE_PATH = "../data/data.json";
 
-const makeCommit = (n: any) => {
+const makeCommit = (n) => {
   if (n === 0) return simpleGit().push();
   console.log(`\n├─ Commit ${n}\n│`);
-  const x: number = random.int(0, 54);
-  const y: number = random.int(0, 6);
-  const DATE: string = moment()
+  const x = random.int(0, 54);
+  const y = random.int(0, 6);
+  const DATE = moment()
     .subtract(0.9, "y")
     .add(0, "d")
     .add(x, "w")
     .add(y, "d")
     .format();
 
-  const formattedDate: string = moment(DATE).format("L");
+  const formattedDate = moment(DATE).format("L");
 
   const data = {
     date: formattedDate,
